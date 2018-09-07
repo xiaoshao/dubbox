@@ -20,9 +20,10 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
 	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
-    <bean class="com.alibaba.dubbo.demo.consumer.DemoAction" init-method="start">
-		<property name="bidService" ref="bidService" />
-		<property name="anotherUserRestService" ref="anotherUserRestService" />
+
+	<bean class="com.alibaba.dubbo.demo.consumer.DemoAction" init-method="start">
+		<property name="bidService" ref="bidService"/>
+		<property name="anotherUserRestService" ref="anotherUserRestService"/>
 	</bean>
 
 </beans>
